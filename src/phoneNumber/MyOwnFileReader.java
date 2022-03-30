@@ -1,7 +1,6 @@
-package com.company;
+package phoneNumber;
 
 import java.io.*;
-import java.util.Arrays;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -9,7 +8,7 @@ import java.util.regex.Pattern;
 public class MyOwnFileReader {
 
     public static void main(String args[]) throws IOException {
-        Scanner scanner = new Scanner(new FileInputStream("file.txt"));
+        Scanner scanner = new Scanner(new FileInputStream("src/file.txt"));
 
         while (scanner.hasNextLine()) {
             String telNumber = scanner.nextLine();
